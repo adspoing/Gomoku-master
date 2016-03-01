@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gomoku</title>
+    <link rel="stylesheet" href="css/gomoku.css"/>
+    		<script src="js/socket.io.js"></script>
+    		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    		<link rel="stylesheet" href="css/style.css" />
+<script src="js/login.js"></script>
+</head> 
+<body>
+		<div id="header"></div>
+
+		<div id="game">
+<canvas id="gomoku" width="750" height="750">
+		</div>
+</canvas>
+<div id="bar">
+        <div id="container">
+            <!-- Login Starts Here -->
+            <div id="loginContainer">
+                <a href="#" id="loginButton"><span>Name</span><em></em></a>
+                <div style="clear:both"></div>
+                <div id="loginBox">                
+                    <form id="loginForm">
+                        <fieldset id="body">
+                            <fieldset>
+                                <label for="name">Your name</label>
+                                <input type="text" name="name" id="name" />
+                            </fieldset>
+                             <a href="#" type="submit" id="loginbtn">登录</a>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Ends Here -->
+        </div>
+    </div>
+		<div id="player1">
+		    <div class="title">Black</div>
+            <div id="bche"></div>
+			<div id="black"></div>
+            <div id="nameb">用户名</div>
+            <div id="rankb">胜</div>
+		</div>
+		<div id="player2">
+		    <div class="title">White</div>
+            <div id="wche"></div>
+			<div id="white"></div>
+             <div id="namew">用户名</div>
+            <div id="rankw">胜</div>
+		</div>
+    <input type="button" id="regame" value="replay"/>
+    <input type="button" id="rank" value="rank"/>
+
+<script src="js/gomoku.js"></script>
+</body>
+</html>
